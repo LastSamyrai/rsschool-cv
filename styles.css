@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f7fa;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.wrapper {
+    background-color: #ffffff;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 10px 15px 20px #165a996b;
+}
+
+.sideBar {
+    background-color: #212d3fea;
+    width: 370px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.contacts {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #ffffff;
+}
+
+.contactsTitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.contactsLink{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #797c81e5;
+}
+
+.contactsType {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 10px;
+}
+
+.skills {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.skillsTitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.skillsList {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ff6b08;
+    margin-left: 15px;
+}
+
+.skillsListText {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.myPhoto {
+    width: 370px;
+}
+
+.aboutMe {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+}
+
+.infoContainer {
+    margin-bottom: 60px;
+}
+
+.profession {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 23px;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 89px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.aboutMeTitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.projectLink {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #595959;
+}
+
+.projectItem {
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.dots {
+    color: #a8a8a8
+}
+
+.professionTitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.professionCompany {
+    color: #ff6b08;
+}
+
+.time {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #a8a8a8;
+}
+
+.timeDelimiter {
+    color: #000000;
+}
+
+.professionDuties {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.professionDutiesList {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 17px;
+    color: #595959;
+}
+
+.faculty {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
