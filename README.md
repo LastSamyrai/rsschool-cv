@@ -1,1 +1,1 @@
-# https://LastSamyrai.github.io/rsschool-cv/
+# https://LastSamyrai.github.io/rsschool-cv/cv

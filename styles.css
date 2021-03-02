@@ -42,6 +42,10 @@ body {
     line-height: 24px;
 }
 
+.contactsList {
+    list-style-type: none;
+}
+
 .contactsLink{
     font-size: 14px;
     font-weight: 400;
@@ -182,4 +186,42 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
+}
+
+.pageFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.copyright {
+    margin-top: -70px;
+    color: #818181;
+    float: right;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.icon {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.rs {
+    width: 85px;
+    height: 85px;
+}
+
+.info-menu ul {
+    list-style: none;
+}
+
+.info-menu li {
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.info-menu symbol {
+    color: #4E4E4E;
 }
