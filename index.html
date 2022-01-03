@@ -9,12 +9,37 @@
 </head>
 <body>
 
-<!--Main container-->
+<header class="main-header container d-flex flex-justify-center">
+    <nav class="main-nav">
+        <ul class="main-nav__list d-flex flex-direction-row">
+            <li>
+                <a href="#about" class="main-nav__link">About</a>
+            </li>
+            <li>
+                <a href="#code" class="main-nav__link">Code</a>
+            </li>
+            <li>
+                <a href="#projects" class="main-nav__link">Projects</a>
+            </li>
+            <li>
+                <a href="#skills" class="main-nav__link">Skills</a>
+            </li>
+            <li>
+                <a href="#contacts" class="main-nav__link">Contacts</a>
+            </li>
+            <li>
+                <a href="#education" class="main-nav__link">Education &amp; work</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
 <main class="wrapper">
+
     <aside class="sideBar">
-        <img class="myPhoto" src="DSC_6453.JPG" alt="My photo">
-        <!--Contacts-->
-        <section class="contacts">
+        <img class="myPhoto" src="DSC_6453.JPG" alt="Photo Ivan KOSIURA">
+
+        <section class="contacts" id="contacts">
             <h3 class="contactsTitle">Contacts</h3>
             <ul>
                 <li class="contactsList">
@@ -27,8 +52,8 @@
                 </li>
             </ul>
         </section>
-        <!--Tech skills-->
-        <section class="skills">
+
+        <section class="skills" id="skills">
             <h3 class="skillsTitle">Tech skills</h3>
             <ul>
                 <li class="skillsList"> <span class="skillsListText">HTML5</span> </li>
@@ -37,16 +62,16 @@
                 <li class="skillsList"> <span class="skillsListText">GIT</span>  </li>
             </ul>
         </section>
-        <!--Soft Skills-->
+
         <section class="skills">
-            <h3 class="skillsTitle">Soft Skills</h3>
+            <h3 class="skillsTitle">Soft skills</h3>
             <ul>
                 <li class="skillsList"> <span class="skillsListText">Teamwork</span> </li>
                 <li class="skillsList"> <span class="skillsListText">Сreative</span> </li>
                 <li class="skillsList"> <span class="skillsListText">Сommunicative</span> </li>
             </ul>
         </section>
-        <!--Languages-->
+
         <section class="skills">
             <h3 class="skillsTitle">Languages</h3>
             <ul>
@@ -56,9 +81,8 @@
         </section>
     </aside>
 
-    <!--About me container-->
     <section class="aboutMe">
-        <header class="infoContainer">
+        <header class="infoContainer" id="about">
             <h1 class="name">Ivan KOSIURA</h1>
             <h2 class="profession">Front-End Developer</h2>
             <p class="description">
@@ -71,8 +95,7 @@
             </p>
         </header>
 
-        <!--projects container-->
-        <section class="infoContainer">
+        <section class="infoContainer" id="projects">
             <h3 class="aboutMeTitle">Projects</h3>
             <ol>
                 <li class="projectItem">
@@ -83,9 +106,38 @@
             </ol>
         </section>
 
+        <section class="infoContainer" id="code">
+            <h3 class="aboutMeTitle">Code example</h3>
+            <p class="description">
+                Write a simple regex to validate a username.
+                Allowed characters are: lowercase letters, numbers, underscore;
+                Length should be between 4 and 16 characters (both included).
+            </p>
+            <pre>
+                <code>
+                    function validateUsr(username) {
+                        if(username.length >=4 && username.length <= 16){
+                            const regexp = /[a-z_\d]{4,16}$/g;
+                            return regexp.test(username);
+                        } else {
+                            return false;
+                        }
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h3 class="aboutMeTitle" id="education">Education</h3>
+            <article>
+                <h4 class="professionTitle professionCompany">National Technical University of Ukraine<br> “Igor Sikorsky Kyiv Polytechnic Institute”</h4>
+                <span class="faculty">Faculty of Radio Engineering</span>
+                <p class="time professionDuties">Septermber 2008 - June 2013 <span class="timeDelimiter">|</span> Ukraine</p>
+            </article>
+        </section>
+
         <section class="infoContainer">
             <h3 class="aboutMeTitle">Work Experience</h3>
-            <!--company-->
             <article>
                 <h4 class="professionTitle">Engineer in <span class="professionCompany">Service for Special Communication</span> </h4>
                 <span class="time">June 2013 - up to now <span class="timeDelimiter">|</span> Ukraine</span>
@@ -98,33 +150,19 @@
                 </ul>
             </article>
         </section>
-
-        <!--Education-->
-        <section>
-            <h3 class="aboutMeTitle">Education</h3>
-
-            <article>
-                <h4 class="professionTitle professionCompany">National Technical University of Ukraine<br> “Igor Sikorsky Kyiv Polytechnic Institute”</h4>
-                <span class="faculty">Faculty of Radio Engineering</span>
-                <p class="time professionDuties">Septermber 2008 - June 2013 <span class="timeDelimiter">|</span> Ukraine</p>
-            </article>
-        </section>
     </section>
-
 </main>
 
 <footer class="pageFooter">
     <nav class="info-menu">
         <ul>
-            <li class="icon"><a href="https://www.youtube.com/"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="youtube" /> </a></li>
-            <li class="symbol">|</li>
             <li class="icon"><a href="https://github.com/LastSamyrai/"> <img src="GitHub-Mark-64px.png" alt="github"/> </a> </li>
             <li class="symbol">|</li>
             <li class="icon rs"><a href="https://rs.school/js/"> <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool"/> </a> </li>
         </ul>
     </nav>
     <div class="copyright">
-              <span>by Ivan Kosiura for RSS at 2021</span>
+              <span>by Ivan Kosiura for RSS at 2022</span>
     </div>
 </footer>
 </body>
