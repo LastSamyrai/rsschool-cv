@@ -6,54 +6,85 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f5f7fa;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    padding: 40px 25px;
+}
 
+.main-header {
+    margin-bottom: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justify-left {
+    justify-content: flex-end;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.main-nav__list {
+    list-style-type: none;
+}
+
+.main-nav__link {
+    padding: 20px;
+    text-transform: uppercase;
+    color: #212d3fea;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .wrapper {
-    background-color: #ffffff;
-    display: flex;
+    background-color: #fff;
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 10px 15px 20px #165a996b;
 }
 
-.sideBar {
+.side-bar {
     background-color: #212d3fea;
     width: 370px;
     padding-bottom: 40px;
     padding-top: 40px;
 }
 
-.contacts {
-    margin-top: 60px;
-    margin-left: 40px;
-    margin-right: 40px;
-    color: #ffffff;
+.my-photo {
+    width: 370px;
 }
 
-.contactsTitle {
+.contacts {
+    color: #ffffff;
+    margin: 60px 40px 0 40px;
+}
+
+.contacts-title {
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
+    margin-bottom: 10px;
 }
 
-.contactsList {
+.contacts-list {
     list-style-type: none;
 }
 
-.contactsLink{
+.contacts-link{
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #797c81e5;
 }
 
-.contactsType {
+.contacts-type {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -61,12 +92,10 @@ body {
 }
 
 .skills {
-    margin-top: 60px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 60px 40px 0 40px;
 }
 
-.skillsTitle {
+.skills-title {
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
@@ -74,7 +103,7 @@ body {
     color: #ffffff;
 }
 
-.skillsList {
+.skills-list {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -82,24 +111,16 @@ body {
     margin-left: 15px;
 }
 
-.skillsListText {
+.skills-list-text {
     color: #ffffff;
     font-weight: 100;
 }
 
-.myPhoto {
-    width: 370px;
+.about-me {
+    padding: 100px 90px 25px 90px;
 }
 
-.aboutMe {
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 110px;
-    padding-bottom: 110px;
-
-}
-
-.infoContainer {
+.info-container {
     margin-bottom: 60px;
 }
 
@@ -123,21 +144,21 @@ body {
     margin-top: 24px;
 }
 
-.aboutMeTitle {
+.about-me-title {
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 10px;
 }
 
-.projectLink {
+.project-link {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #595959;
 }
 
-.projectItem {
+.project-item {
     font-weight: 700;
     margin-left: 20px;
 }
@@ -146,7 +167,7 @@ body {
     color: #a8a8a8
 }
 
-.professionTitle {
+.profession-title {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -154,7 +175,7 @@ body {
     margin-bottom: 15px;
 }
 
-.professionCompany {
+.profession-company {
     color: #ff6b08;
 }
 
@@ -165,16 +186,16 @@ body {
     color: #a8a8a8;
 }
 
-.timeDelimiter {
+.time-delimiter {
     color: #000000;
 }
 
-.professionDuties {
+.profession-duties {
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
-.professionDutiesList {
+.profession-duties-list {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -188,9 +209,9 @@ body {
     line-height: 24px;
 }
 
-.pageFooter {
+.page-footer {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
 }
 

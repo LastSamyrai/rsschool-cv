@@ -3,64 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resume</title>
+    <title>Resume of Ivan KOSIURA</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<header class="main-header d-flex flex-justify-center">
+    <nav class="main-nav">
+        <ul class="main-nav__list d-flex flex-direction-row">
+            <li>
+                <a href="#about" class="main-nav__link">About</a>
+            </li>
+            <li>
+                <a href="#code" class="main-nav__link">Code</a>
+            </li>
+            <li>
+                <a href="#projects" class="main-nav__link">Projects</a>
+            </li>
+            <li>
+                <a href="#skills" class="main-nav__link">Skills</a>
+            </li>
+            <li>
+                <a href="#contacts" class="main-nav__link">Contacts</a>
+            </li>
+            <li>
+                <a href="#education" class="main-nav__link">Education &amp; work</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="wrapper d-flex">
+    <aside class="side-bar">
+        <img class="my-photo" src="DSC_6453.JPG" alt="My Photo">
+        <section class="contacts" id="contacts">
+            <h3 class="contacts-title">Contacts</h3>
+            <ul>
+                <li class="contacts-list">
+                    <span class="contacts-type">Phone:</span>
+                    <a class="contacts-link" href="tel:380936882722"> +380&nbsp;93&nbsp;688&nbsp;27&nbsp;22</a>
+                </li>
+                <li class="contacts-list">
+                    <span class="contacts-type">Email:</span>
+                    <a class="contacts-link" href="mailto:last1samyrai@gmail.com"> last1samyrai@gmail.com</a>
+                </li>
+                <li class="contacts-list">
+                    <span class="contacts-type">Telegram: </span>
+                    <a class="contacts-link" href="https://t.me/Doctor_warrior" target="_blank">https://t.me/Doctor_warrior</a>
+                </li>
+                <li class="contacts-list">
+                    <span class="contacts-type">Discord: </span>
+                    <a class="contacts-link" href="https://discord.com/" target="_blank"> DarK_Knigt#9727 </a>
+                </li>
+            </ul>
+        </section>
 
-<!--Main container-->
-<main class="wrapper">
-    <aside class="sideBar">
-        <img class="myPhoto" src="DSC_6453.JPG" alt="My photo">
-        <!--Contacts-->
-        <section class="contacts">
-            <h3 class="contactsTitle">Contacts</h3>
+        <section class="skills" id="skills">
+            <h3 class="skills-title">Tech skills</h3>
             <ul>
-                <li class="contactsList">
-                    <span class="contactsType">Phone:</span>
-                    <a class="contactsLink" href="tel:380936882722"> +38 093 688 27 22</a>
-                </li>
-                <li class="contactsList">
-                    <span class="contactsType">Email:</span>
-                    <a class="contactsLink" href="mailto:last1samyrai@gmail.com"> last1samyrai@gmail.com</a>
-                </li>
+                <li class="skills-list"> <span class="skills-list-text">HTML5</span> </li>
+                <li class="skills-list"> <span class="skills-list-text">CSS3</span> </li>
+                <li class="skills-list"> <span class="skills-list-text">JavaScript</span> </li>
+                <li class="skills-list"> <span class="skills-list-text">GIT</span>  </li>
             </ul>
         </section>
-        <!--Tech skills-->
+
         <section class="skills">
-            <h3 class="skillsTitle">Tech skills</h3>
+            <h3 class="skills-title">Soft skills</h3>
             <ul>
-                <li class="skillsList"> <span class="skillsListText">HTML5</span> </li>
-                <li class="skillsList"> <span class="skillsListText">CSS3</span> </li>
-                <li class="skillsList"> <span class="skillsListText">JavaScript</span> </li>
-                <li class="skillsList"> <span class="skillsListText">GIT</span>  </li>
+                <li class="skills-list"> <span class="skills-list-text">Teamwork</span> </li>
+                <li class="skills-list"> <span class="skills-list-text">Сreative</span> </li>
+                <li class="skills-list"> <span class="skills-list-text">Сommunicative</span> </li>
+                <li class="skills-list"> <span class="skills-list-text">Willingness to learn</span> </li>
+                <li class="skills-list"> <span class="skills-list-text">Stress resistance</span> </li>
             </ul>
         </section>
-        <!--Soft Skills-->
+
         <section class="skills">
-            <h3 class="skillsTitle">Soft Skills</h3>
+            <h3 class="skills-title">Languages</h3>
             <ul>
-                <li class="skillsList"> <span class="skillsListText">Teamwork</span> </li>
-                <li class="skillsList"> <span class="skillsListText">Сreative</span> </li>
-                <li class="skillsList"> <span class="skillsListText">Сommunicative</span> </li>
-            </ul>
-        </section>
-        <!--Languages-->
-        <section class="skills">
-            <h3 class="skillsTitle">Languages</h3>
-            <ul>
-                <li class="skillsList"> <span class="skillsListText">Ukrainian and Russian – Native</span> </li>
-                <li class="skillsList"> <span class="skillsListText">English - Elementary </span> </li>
+                <li class="skills-list"> <span class="skills-list-text">Ukrainian and Russian – Native</span> </li>
+                <li class="skills-list"> <span class="skills-list-text">English - Elementary (A2)</span> </li>
             </ul>
         </section>
     </aside>
 
-    <!--About me container-->
-    <section class="aboutMe">
-        <header class="infoContainer">
-            <h1 class="name">Ivan KOSIURA</h1>
-            <h2 class="profession">Front-End Developer</h2>
+    <section class="about-me">
+        <header class="info-container ">
+            <h1 class="name d-flex flex-justify-left">Ivan KOSIURA</h1>
+            <small class="profession d-flex flex-justify-left">Front-End Developer</small>
+            <h2 class="about-me-title" id="about">About me</h2>
             <p class="description">
                 Now I extend my experience in HTML, CSS, JavaScript and learn new ones for me Frameworks.
                 I also know how to use Git. I am always working to improve my skills. That's why I started attending this courses.
@@ -71,60 +102,73 @@
             </p>
         </header>
 
-        <!--projects container-->
-        <section class="infoContainer">
-            <h3 class="aboutMeTitle">Projects</h3>
+        <section class="info-container" id="projects">
+            <h2 class="about-me-title">Projects</h2>
             <ol>
-                <li class="projectItem">
-                    <a class="projectLink" href="https://github.com/LastSamyrai?tab=repositories">My repositories of github</a>
-                    <span class="dots">...........................................................................</span>
-                    <span class="projectLink"> <b>[</b>In progress <b>]</b></span>
+                <li class="project-item">
+                    <a class="project-link" href="https://github.com/LastSamyrai?tab=repositories">My repositories of github</a>
+                    <span class="dots">..........................................................................</span>
+                    <span class="project-link"> <b>[</b>In progress <b>]</b></span>
                 </li>
             </ol>
         </section>
 
-        <section class="infoContainer">
-            <h3 class="aboutMeTitle">Work Experience</h3>
-            <!--company-->
+        <section class="info-container" id="code">
+            <h2 class="about-me-title">Code example</h2>
+            <p class="description">
+                Write a simple regex to validate a username.
+                Allowed characters are: lowercase letters, numbers, underscore;
+                Length should be between 4 and 16 characters (both included).
+            </p>
+            <pre>
+                <code>
+                    function validateUsr(username) {
+                        if(username.length &gt;= 4 &amp;&amp; username.length &lt;= 16){
+                            const regexp = &frasl;[a-z_\d]{4,16}$&frasl;g;
+                            return regexp.test(username);
+                        } else {
+                            return false;
+                        }
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section class="info-container">
+            <h2 class="about-me-title" id="education">Education</h2>
             <article>
-                <h4 class="professionTitle">Engineer in <span class="professionCompany">Service for Special Communication</span> </h4>
-                <span class="time">June 2013 - up to now <span class="timeDelimiter">|</span> Ukraine</span>
-                <ul class="professionDuties">
-                    <li class="professionDutiesList">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <h4 class="profession-title profession-company">National Technical University of Ukraine<br> “Igor Sikorsky Kyiv Polytechnic Institute”</h4>
+                <span class="faculty">Faculty of Radio Engineering</span>
+                <p class="time profession-duties">Septermber 2008 - June 2013 <span class="time-delimiter">|</span> Ukraine</p>
+            </article>
+        </section>
+
+        <section class="info-container">
+            <h2 class="about-me-title">Work Experience</h2>
+            <article>
+                <h4 class="profession-title">Engineer in <span class="profession-company">Service for Special Communication</span> </h4>
+                <span class="time">June 2013 - up to now <span class="time-delimiter">|</span> Ukraine</span>
+                <ul class="profession-duties">
+                    <li class="profession-duties-list">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Veritatis, quod doloribus.</li>
-                    <li class="professionDutiesList">Vitae dignissimos odio itaque praesentium quia necessitatibus, officiis assumenda ipsam explicabo corporis sint,
+                    <li class="profession-duties-list">Vitae dignissimos odio itaque praesentium quia necessitatibus, officiis assumenda ipsam explicabo corporis sint,
                         deleniti voluptatibus tenetur consectetur aliquid dicta!</li>
-                    <li class="professionDutiesList">Veritatis, quod doloribus.</li>
+                    <li class="profession-duties-list">Veritatis, quod doloribus.</li>
                 </ul>
             </article>
         </section>
-
-        <!--Education-->
-        <section>
-            <h3 class="aboutMeTitle">Education</h3>
-
-            <article>
-                <h4 class="professionTitle professionCompany">National Technical University of Ukraine<br> “Igor Sikorsky Kyiv Polytechnic Institute”</h4>
-                <span class="faculty">Faculty of Radio Engineering</span>
-                <p class="time professionDuties">Septermber 2008 - June 2013 <span class="timeDelimiter">|</span> Ukraine</p>
-            </article>
-        </section>
     </section>
-
 </main>
-
-<footer class="pageFooter">
+<footer class="page-footer">
     <nav class="info-menu">
         <ul>
-            <li class="icon"><a href="https://www.youtube.com/"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="youtube" /> </a></li>
+            <li class="icon"><a href="https://github.com/LastSamyrai/"> <img src="GitHub-Mark-64px.png" alt="github"> </a> </li>
             <li class="symbol">|</li>
-            <li class="icon"><a href="https://github.com/LastSamyrai/"> <img src="GitHub-Mark-64px.png" alt="github"/> </a> </li>
-            <li class="symbol">|</li>
-            <li class="icon rs"><a href="https://rs.school/js/"> <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool"/> </a> </li>
+            <li class="icon rs"><a href="https://rs.school/js/"> <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool"> </a> </li>
         </ul>
     </nav>
     <div class="copyright">
-              <span>by Ivan Kosiura for RSS at 2021</span>
+        <span>by Ivan Kosiura for RSS at 2022</span>
     </div>
 </footer>
 </body>
