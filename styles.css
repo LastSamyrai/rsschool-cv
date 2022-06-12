@@ -5,13 +5,13 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
     background-color: #f5f5f5;
-    padding: 40px 25px;
 }
 
-.main-header {
-    margin-bottom: 20px;
+.container {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .d-flex {
@@ -30,31 +30,77 @@ body {
     flex-direction: row;
 }
 
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+}
+
+.main-header:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*top: 0;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, 0);*/
+    background-color: #212d3fea;
+    z-index: 2;
+}
+
+.header__body {
+    position: relative;
+    padding: 0 20px;
+    height: 40px;
+}
+
+.header__burger {
+    display: none;
+}
+
 .main-nav__list {
     list-style-type: none;
+    position: relative;
+    z-index: 2;
+}
+
+.main-nav__list li {
+    padding: 0 20px;
 }
 
 .main-nav__link {
-    padding: 20px;
     text-transform: uppercase;
-    color: #212d3fea;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 18px;
     font-weight: 700;
     text-decoration: none;
 }
 
+.main-nav__list a:hover {
+    color: #ff6b08;
+}
+
 .wrapper {
     background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 60px 20px 20px 20px;
     box-shadow: 10px 15px 20px #165a996b;
 }
 
 .side-bar {
     background-color: #212d3fea;
     width: 370px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding: 20px 0;
 }
 
 .my-photo {
@@ -63,25 +109,19 @@ body {
 
 .contacts {
     color: #ffffff;
-    margin: 60px 40px 0 40px;
-}
-
-.contacts-title {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 10px;
+    padding: 40px 40px 0 40px;
 }
 
 .contacts-list {
     list-style-type: none;
 }
 
-.contacts-link{
+.contacts-link {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #797c81e5;
+    text-decoration: none;
 }
 
 .contacts-type {
@@ -91,16 +131,21 @@ body {
     margin-right: 10px;
 }
 
+.contacts-icon {
+    width: 32px;
+    height: 32px;
+}
+
 .skills {
-    margin: 60px 40px 0 40px;
+    padding: 40px 40px 0 40px;
 }
 
 .skills-title {
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
-    margin-bottom: 10px;
-    color: #ffffff;
+    padding: 15px 0;
+    color: #ff5b08;
 }
 
 .skills-list {
@@ -117,38 +162,36 @@ body {
 }
 
 .about-me {
-    padding: 100px 90px 25px 90px;
+    padding: 100px 50px 25px;
 }
 
 .info-container {
-    margin-bottom: 60px;
+
 }
 
 .profession {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-    margin-bottom: 23px;
 }
 
 .name {
     font-size: 45px;
     font-weight: 700;
-    line-height: 89px;
+    line-height: 90px;
 }
 
 .description {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    margin-top: 24px;
 }
 
 .about-me-title {
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
-    margin-bottom: 10px;
+    padding: 50px 0 20px 0;
 }
 
 .project-link {
@@ -171,8 +214,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    padding: 0 0 10px 0;
 }
 
 .profession-company {
@@ -191,8 +233,7 @@ body {
 }
 
 .profession-duties {
-    margin-top: 15px;
-    margin-bottom: 30px;
+    padding: 10px 0 20px 0;
 }
 
 .profession-duties-list {
@@ -209,18 +250,16 @@ body {
     line-height: 24px;
 }
 
-.page-footer {
-    max-width: 1200px;
-    margin: 20px auto;
+.footer {
+    padding: 20px;
     position: relative;
 }
 
 .copyright {
-    margin-top: -70px;
     color: #818181;
     float: right;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .icon {
@@ -230,8 +269,7 @@ body {
 }
 
 .rs {
-    width: 85px;
-    height: 85px;
+    width: 100px;
 }
 
 .info-menu ul {
@@ -245,4 +283,87 @@ body {
 
 .info-menu symbol {
     color: #4E4E4E;
+}
+
+
+
+@media (max-width: 767px) {
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header__burger span {
+        position: absolute;
+        background-color: #ffffff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.2s ease 0s;
+    }
+
+    .header__burger:before,
+    .header__burger:after {
+        content: '';
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.2s ease 0s;
+    }
+
+    .header__burger:before {
+        top:0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+    .main-nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #212d3fea;
+        padding: 40px 10px 10px 10px;
+        transition: all 0.2s ease 0s;
+    }
+
+    .main-nav.active {
+        top: 0;
+    }
+
+    .main-nav__list {
+        display: block;
+    }
+
+    .main-nav__list li {
+        padding: 10px 0;
+    }
+
 }

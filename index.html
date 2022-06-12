@@ -6,37 +6,44 @@
     <title>Resume of Ivan KOSIURA</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-<header class="main-header d-flex flex-justify-center">
-    <nav class="main-nav">
-        <ul class="main-nav__list d-flex flex-direction-row">
-            <li>
-                <a href="#about" class="main-nav__link">About</a>
-            </li>
-            <li>
-                <a href="#code" class="main-nav__link">Code</a>
-            </li>
-            <li>
-                <a href="#projects" class="main-nav__link">Projects</a>
-            </li>
-            <li>
-                <a href="#skills" class="main-nav__link">Skills</a>
-            </li>
-            <li>
-                <a href="#contacts" class="main-nav__link">Contacts</a>
-            </li>
-            <li>
-                <a href="#education" class="main-nav__link">Education &amp; work</a>
-            </li>
-        </ul>
-    </nav>
+<header class="main-header container">
+        <div class="header__body d-flex flex-align-center flex-justify-center">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav__list d-flex flex-direction-row">
+                    <li>
+                        <a href="#about" class="main-nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#code" class="main-nav__link">Code</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="main-nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="main-nav__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="main-nav__link">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#education" class="main-nav__link">Education &amp; work</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 </header>
-<main class="wrapper d-flex">
+<main class="container wrapper d-flex">
     <aside class="side-bar">
         <img class="my-photo" src="DSC_6453.JPG" alt="My Photo">
         <section class="contacts" id="contacts">
-            <h3 class="contacts-title">Contacts</h3>
+            <h3 class="skills-title">Contacts</h3>
             <ul>
                 <li class="contacts-list">
                     <span class="contacts-type">Phone:</span>
@@ -159,7 +166,7 @@
         </section>
     </section>
 </main>
-<footer class="page-footer">
+<footer class="container footer d-flex flex-justify-between">
     <nav class="info-menu">
         <ul>
             <li class="icon"><a href="https://github.com/LastSamyrai/"> <img src="GitHub-Mark-64px.png" alt="github"> </a> </li>
@@ -167,7 +174,7 @@
             <li class="icon rs"><a href="https://rs.school/js/"> <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool"> </a> </li>
         </ul>
     </nav>
-    <div class="copyright">
+    <div class="copyright d-flex flex-align-center">
         <span>by Ivan Kosiura for RSS at 2022</span>
     </div>
 </footer>
