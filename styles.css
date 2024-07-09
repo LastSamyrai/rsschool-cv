@@ -100,7 +100,6 @@ body {
 .side-bar {
     background-color: #212d3fea;
     width: 370px;
-    padding: 20px 0;
 }
 
 .my-photo {
@@ -264,13 +263,13 @@ body {
 
 .icon {
     margin: 5px;
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
 }
 
-.rs {
-    width: 100px;
-}
+/*.rs {
+     width: 100px;
+ }*/
 
 .info-menu ul {
     list-style: none;
@@ -285,7 +284,9 @@ body {
     color: #4E4E4E;
 }
 
+@media (max-width: 767px) {
 
+}
 
 @media (max-width: 767px) {
 
